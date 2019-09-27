@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <form class="jumbotron" action="" method="post">{% csrf_token %}
+       <p class="lead">Are you sure you want to delete "{{ post.title }}"?</p>
+       <input  class="btn btn-primary btn-lg" type="submit" value="Confirm" />
+</form>
+
+{% endblock %}
